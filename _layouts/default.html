@@ -1,0 +1,70 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	
+
+	{% if page.no_index == true or layout.no_index == true %}
+	<meta name="robots" content="noindex, follow">
+	{% endif %}
+
+	{% seo %}
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="{% asset_path favicon/apple-touch-icon.png %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% asset_path favicon/favicon-32x32.png %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% asset_path favicon/favicon-16x16.png %}">
+	<link rel="mask-icon" href="{% asset_path favicon/safari-pinned-tab.svg %}" color="#6744b1">
+	<link rel="shortcut icon" href="{% asset_path favicon/favicon.ico %}">
+	<meta name="apple-mobile-web-app-title" content="Panoply">
+	<meta name="application-name" content="Panoply">
+	<meta name="theme-color" content="#ffffff">
+
+	<!--Google Tag Manager-->
+	<script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-K4QVR9');
+	</script>
+	<!--End Google Tag Manager-->
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Encode+Sans+Expanded:300,400,500,600" rel="stylesheet">
+
+	<!-- App Styles -->
+	{% css main %}
+
+</head>
+<body class="
+	{% if page.is_post %}post{% endif %}
+	{{ page.url | slugify }}
+	{% if page.body_class %}{{page.body_class}}{% endif %}
+	{% if layout.body_class %}{{layout.body_class}}{% endif %}
+">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4QVR9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	{{ content }}
+
+	<!-- App JS -->
+	{% js main %}
+
+	<!-- Start of Async HubSpot Analytics Code -->
+	<script type="text/javascript">
+        (function(d,s,i,r) {
+            if (d.getElementById(i)){return;}
+            var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+            n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2548165.js';
+            e.parentNode.insertBefore(n, e);
+        })(document,"script","hs-analytics",300000);
+	</script>
+	<!-- End of Async HubSpot Analytics Code -->
+
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5813bb24d18e321a"></script>
+
+</body>
+</html>

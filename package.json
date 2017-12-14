@@ -1,0 +1,19 @@
+{
+  "name": "panoply-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm run build && htmlproofer --assume-extension ./_site --allow-hash-href true --http-status-ignore '999'",
+    "start": "jekyll serve --incremental",
+    "build": "bundle exec jekyll build --config '_config.yml,_config_prod.yml'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lunr": "^2.1.4"
+  },
+  "devDependencies": {
+    "html-proofer": "0.0.1"
+  }
+}

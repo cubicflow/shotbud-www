@@ -1,0 +1,63 @@
+.nav-button {
+    width: 46px;
+    height: 46px;
+    display: block;
+    position: relative;
+    @include breakpoint(medium){
+        display: none;
+    }
+
+    &:hover {
+        .nav-button__line--first {
+            transform: translateY(-2px);
+        }
+        .nav-button__line--third {
+            transform: translateY(2px);
+        }
+    }
+    &.active {
+        .nav-button__line--first {
+            transform: translateY(5px) rotate(45deg) translateX(0px);
+        }
+        .nav-button__line--second {
+            transform: translateY(4px) rotate(45deg) translateX(1px);
+            opacity: 0;
+        }
+        .nav-button__line--third {
+            transform: translateY(-5px) rotate(-45deg) translateX(0px);
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        width: 32px;
+        height: 32px;
+        background-color: $white;
+        border-radius: 12px;
+    }
+    &__lines {
+        position: relative;
+        top: 12px;
+        left: 19px;
+    }
+    &__line {
+        height: 2px;
+        width: 18px;
+        border-radius: 1px;
+        background-color: $black;
+        position: absolute;
+        transition: all 0.1s;
+
+        &--first {
+            top: 4px;
+        }
+        &--second{
+            top: 9px;
+        }
+        &--third{
+            top: 14px;
+        }
+    }
+}

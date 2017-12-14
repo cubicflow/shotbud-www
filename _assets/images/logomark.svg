@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="53px" viewBox="0 0 39 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-7.63302183e-15%" y1="49.984%" x2="100%" y2="49.984%" id="linearGradient-1">
+            <stop stop-color="#CB1C81" offset="0%"></stop>
+            <stop stop-color="#9A2985" offset="64%"></stop>
+            <stop stop-color="#712D86" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="8.69031323e-05%" y1="49.9859353%" x2="100%" y2="49.9859353%" id="linearGradient-2">
+            <stop stop-color="#6A2B80" offset="0%"></stop>
+            <stop stop-color="#532D86" offset="33%"></stop>
+            <stop stop-color="#464E9B" offset="68%"></stop>
+            <stop stop-color="#199BD1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#1FAE8F" offset="0%"></stop>
+            <stop stop-color="#26AF8B" offset="5%"></stop>
+            <stop stop-color="#5CB46F" offset="44%"></stop>
+            <stop stop-color="#88BF4C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#00AABB" offset="0%"></stop>
+            <stop stop-color="#00ADAB" offset="45%"></stop>
+            <stop stop-color="#30B091" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9552266%" x2="100.028482%" y2="49.9552266%" id="linearGradient-5">
+            <stop stop-color="#37AC6B" offset="0%"></stop>
+            <stop stop-color="#61B251" offset="47%"></stop>
+            <stop stop-color="#8EC03E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#84BF6C" offset="0%"></stop>
+            <stop stop-color="#BBCF49" offset="49%"></stop>
+            <stop stop-color="#EAE22A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0445035303%" y1="49.9865193%" x2="99.9994326%" y2="49.9865193%" id="linearGradient-7">
+            <stop stop-color="#BEBC31" offset="0%"></stop>
+            <stop stop-color="#DFD61F" offset="47%"></stop>
+            <stop stop-color="#FCE900" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9974341%" x2="100%" y2="49.9974341%" id="linearGradient-8">
+            <stop stop-color="#DE0B80" offset="0%"></stop>
+            <stop stop-color="#E95B4D" offset="50%"></stop>
+            <stop stop-color="#FDCE07" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill-rule="nonzero">
+            <g id="logo--white" transform="translate(0.000000, 4.000000)">
+                <g id="mark">
+                    <g id="Layer_9" transform="translate(1.286908, 5.621622)" fill="url(#linearGradient-1)">
+                        <path d="M0.265961003,5.77297297 L7.95309192,13.5567568 L12.7275209,8.8 L4.10952646,0.0432432432 C2.48569942,1.69894639 1.17711277,3.64102963 0.248802228,5.77297297" id="Shape"></path>
+                    </g>
+                    <g id="Layer_8" transform="translate(0.000000, 11.243243)" fill="url(#linearGradient-2)">
+                        <path d="M8.47032947e-21,7.68864865 C-0.00245420143,10.3936347 0.572508467,13.0674837 1.68584958,15.5286486 L9.23571031,7.93945946 L1.54857939,0.155675676 C0.524764262,2.53284081 -0.00238043109,5.09710504 -2.07835288e-15,7.68864865" id="Shape"></path>
+                    </g>
+                    <g id="Layer_6" transform="translate(6.863510, 33.297297)" fill="url(#linearGradient-3)">
+                        <path d="M0.120111421,0.35027027 L12.0626184,14.4562162 L12.2170474,14.4562162 L11.7151532,4.32432432 C9.05554318,4.3027027 6.52891365,1.96756757 4.24250696,0.934054054 L4.24250696,0.934054054 C3.6165648,0.693415427 2.93776748,0.627677001 2.2778273,0.743783784 C1.52284123,0.834594595 0.802172702,0.903783784 0.120111421,0.35027027 Z" id="Shape"></path>
+                    </g>
+                    <g id="Layer_7" transform="translate(1.286908, 19.027027)" fill="url(#linearGradient-4)">
+                        <path d="M0.398941504,7.74486486 C2.30329526,11.9402618 5.65810757,15.2929502 9.83626741,17.1762162 L17.2917549,9.60432432 L7.95309192,0.147027027 L0.398941504,7.74486486 Z" id="Shape"></path>
+                    </g>
+                    <g id="Layer_5" transform="translate(10.724234, 28.540541)" fill="url(#linearGradient-5)">
+                        <path d="M0.38178273,7.65405405 C5.16511347,9.81000862 10.6237189,9.85702662 15.4428969,7.78378378 L7.84584958,0.0778378378 L0.38178273,7.65405405 Z" id="Shape"></path>
+                    </g>
+                    <g id="Layer_4" transform="translate(18.445682, 19.027027)" fill="url(#linearGradient-6)">
+                        <path d="M0.120111421,9.59567568 L7.72144847,17.2972973 C11.9228171,15.4707636 15.3203923,12.1641284 17.2788858,7.99567568 L9.43732591,0.0432432432 L0.120111421,9.59567568 Z" id="Shape"></path>
+                    </g>
+                    <g id="Layer_3" transform="translate(27.883008, 10.810811)" fill="url(#linearGradient-7)">
+                        <path d="M0,8.24648649 L7.84155989,16.1989189 C9.02154753,13.6719245 9.63519786,10.9140417 9.6389415,8.12108108 C9.64555407,5.37111048 9.052451,2.65328902 7.9016156,0.16 L0,8.24648649 Z" id="Shape"></path>
+                    </g>
+                    <g id="Layer_2" transform="translate(10.724234, 0.000000)" fill="url(#linearGradient-8)">
+                        <path d="M0.10724234,1.79027027 L17.1587744,19.0572973 L25.0518106,10.9708108 C22.9535092,6.41924445 19.1474275,2.89444935 14.4709553,1.17192829 C9.79448296,-0.550592779 4.63074065,-0.329722038 0.115821727,1.78594595 L0.115821727,1.78594595" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

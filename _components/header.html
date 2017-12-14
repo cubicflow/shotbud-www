@@ -1,0 +1,35 @@
+{% assign should_show_toc = page.show_mobile_table_of_contents == true or layout.show_mobile_table_of_contents == true %}
+<div class="head">
+    <div class="head__fixture">
+
+        <div class="head__content">
+
+            {% if page.show_mobile_table_of_contents == true or layout.show_mobile_table_of_contents == true %}
+                <div class="head__logo">
+                    <a href="{{ '/' | prepend:site.baseurl }}">{% img logomark.svg width="34px" height="45px" alt="Panoply Logomark" %}</a>
+                    <a id="show-mobile-toc">
+                      <span>Jump to section</span>
+                    </a>
+                </div>
+            {% else %}
+                <div class="head__logo">
+                    <a href="{{ '/' | prepend:site.baseurl }}">{% img logo--white.svg alt="Panoply Logo" %}</a>
+                </div>
+            {% endif %}
+
+            {% include nav-button.html %}
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mobile-toc">
+    <div class="mobile-toc__title">
+        {{page.title}}
+    </div>
+    <ul class="mobile-toc__list">
+
+    </ul>
+</div>

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="container container--columns">
+    
+    {% include sidebar.html %}
+
+    <main class="content">
+
+        <div class="article__header">
+            <span class="article__category">
+                Showing docs tagged with:
+            </span>
+            <h1>{{page.title}}</h1>
+            <div class="article__meta">
+            </div>
+        </div>
+
+        {% for doc in site.docs %}
+            {% if doc.tags contains page.slug %}
+                {% include article-excerpt.html article=doc excerpt=true %}
+            {% endif %}
+        {% endfor %}
+    </main>
+</div>

@@ -1,0 +1,94 @@
+// search.html includes a window.store object with a json representation of the sites content.
+// use that data to power search
+
+// Kick off search
+!(function () {
+
+	const searchTerm = getQueryVariable('query');
+	const searchTermHolder = document.getElementById('search-term');
+	const searchResults = document.getElementById('search-results');
+
+	if (searchTerm && searchTermHolder) {
+		searchTermHolder.innerHTML = searchTerm;
+
+		// Initalize lunr with the fields it will be searching on. I've given title
+		// a boost of 10 to indicate matches on this field are more important.
+		const idx = lunr(function() {
+			this.field('id');
+			this.field('title', { boost: 10 });
+			this.field('author');
+			this.field('tags');
+			this.field('category');
+			this.field('content');
+
+			for (let key in window.store) { // Add the data to lunr
+				this.add({
+					'id': key,
+					'title': window.store[key].title,
+					'author': window.store[key].author,
+					'tags': window.store[key].tags,
+					'category': window.store[key].category,
+					'content': window.store[key].content
+				});
+			}
+		});
+
+		const results = idx.search(searchTerm); // Get lunr to perform a search
+		displaySearchResults(results, window.store); // We'll write this in the next section
+	}
+
+	function makeSearchResultTemplate(result){
+
+		return `
+			<article class="article article--excerpt">
+			
+				<header class="article__header">
+			
+					<h2>
+						<a href="${result.url}">${result.title}</a>
+					</h2>
+			
+					<aside class="article__meta">
+			
+					</aside>
+			
+				</header>
+			
+				<p>
+					${result.content.substring(0, 200)}
+					<a class="article__more" href="${result.url}">... more</a>
+				</p>
+			
+			</article>
+		`;
+
+	}
+
+	function displaySearchResults(results, store) {
+
+		if (results.length) { // Are there any results?
+			
+			const templatedSearchData = results.map((result) => {
+				return makeSearchResultTemplate(store[result.ref]);
+			}).join('');
+
+			searchResults.innerHTML = templatedSearchData;
+		} else {
+			searchResults.innerHTML = `<div class="no-results">No results found for '${searchTerm}'</div>`;
+		}
+	}
+
+	function getQueryVariable(variable) {
+		const query = window.location.search.substring(1);
+		const vars = query.split('&');
+
+		for (let i = 0; i < vars.length; i++) {
+			const pair = vars[i].split('=');
+
+			if (pair[0] === variable) {
+				return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+			}
+		}
+	}
+
+})();

@@ -1,0 +1,31 @@
+{% assign article = include.article %}
+<article class="article article--excerpt">
+
+    <header class="article__header">
+
+        <h2>
+            <a href="{{article.url | prepend: baseurl}}">{{article.title}}</a>
+        </h2>
+
+        <aside class="article__meta">
+
+            <div class="article__tags">
+                <span class="text-muted">Tags:</span>&nbsp; 
+                {% for tag_stub in article.tags %} 
+                {% assign tag_slug = tag_stub | slugify: 'pretty' %} 
+                {% assign tag = site.tags | where:'slug', tag_slug | first %}
+                <a href="{{tag.url | prepend: site.baseurl}}">
+                    {{tag.title}}
+                </a> {% unless forloop.last %},&nbsp;{% endunless %} {% endfor %}
+            </div>
+
+        </aside>
+
+    </header>
+
+    <p>
+        {{article.excerpt | remove: '<p>' | remove: '</p>' }}
+        <a class="article__more" href="{{ article.url | prepend: site.baseurl }}">... more</a>
+    </p>
+
+</article>

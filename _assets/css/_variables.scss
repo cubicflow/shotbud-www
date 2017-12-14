@@ -1,0 +1,92 @@
+//
+//  Colors
+//
+$black: #000000;
+$gray-xdark: #4C4C4C;
+$gray-dark: #727C8F;
+$gray: #A5AAAE;
+$gray-light: #F2F2F2;
+$white: #FFFFFF;
+
+$green: #409D56;
+$green-light: #66A86F;
+$lime-green: #8BC052;
+$purple: #6744B1;
+$teal: #47B2BD;
+$blue: #4D5DA0;
+$pink: #DD0E39;
+$orange: #D07A4E;
+
+//
+//  Breakpoints
+//
+$breakpoints: (
+    'small':  480px,
+    'medium': 767px,
+    'large':  1024px,
+    'xlarge':  1280px
+);
+
+$container-max-width: 1440px;
+
+
+//
+//  Element styles and colors
+//
+$body-color: $black;
+$body-bg: $white;
+$text-muted: $gray-dark;
+
+$discourse-color: #7289DA;
+
+$link-color: $green;
+$link-hover-color: $green-light;
+$link-decoration: underline;
+$link-hover-decoration: underline;
+
+//
+//  Typography
+//
+$font-family-base: 'Encode Sans Expanded', sans-serif;
+$font-size-base: 14px;
+$font-weight-base: 400;
+$line-height-base: 1.8em;
+
+$font-sizes-base: (
+    'xsmall': 0.75em,
+    'small': 0.85em,
+    'medium': 0.9em,
+    'large': 1.0em,
+    'xlarge': 1.5em,
+    'xxlarge': 1.8em,
+    'xxxlarge': 2em,
+);
+$font-sizes-medium: (
+    'xsmall': 0.75em,
+    'small': 0.85em,
+    'medium': 1em,
+    'large': 1.14em,
+    'xlarge': 1.5em,
+    'xxlarge': 2.14em,
+    'xxxlarge': 2.85em,
+);
+$font-sizes-large: (
+    'xsmall': 0.8em,
+    'small': 0.9em,
+    'medium': 1em,
+    'large': 1.14em,
+    'xlarge': 1.7em,
+    'xxlarge': 2.24em,
+    'xxxlarge': 2.95em,
+);
+
+
+$headings-font-family: 'Roboto Slab', sans-serif;
+$headings-font-weight: 400;
+$headings-line-height: 1.4em;
+$headings-margin-bottom: 1.2em;
+$headings-margin-top: 1.4em;
+$paragraph-margin-bottom: 1.4em;
+
+$table-cell-padding: 0.5em;
+$dt-font-weight: 600;

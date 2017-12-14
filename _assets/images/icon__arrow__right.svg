@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Docs__Category__Article" transform="translate(-277.000000, -415.000000)" fill="#000000">
+            <g id="Sidebar-Group">
+                <g id="Categories-Group" transform="translate(275.000000, 162.000000)">
+                    <g id="More..." transform="translate(0.000000, 226.000000)">
+                        <path d="M5.5,34 C5.224,34 5,34.224 5,34.5 C5,34.6385 5.056,34.763 5.1465,34.8535 L9.1465,38.8535 C9.237,38.9445 9.362,39 9.5,39 C9.6385,39 9.7635,38.9445 9.8535,38.8535 L13.8535,34.8535 C13.944,34.763 14,34.6385 14,34.5 C14,34.224 13.776,34 13.5,34 C13.362,34 13.237,34.056 13.1465,34.1465 L10,37.293 L10,24.5 C10,24.2235 9.776,24 9.5,24 C9.224,24 9,24.2235 9,24.5 L9,37.293 L5.8535,34.1465 C5.7635,34.056 5.6385,34 5.5,34" id="Path" transform="translate(9.500000, 31.500000) rotate(-90.000000) translate(-9.500000, -31.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

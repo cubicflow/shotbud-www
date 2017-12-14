@@ -1,0 +1,89 @@
+<div class="sidebar">
+
+    <div class="sidebar__logo">
+        <a href="{{ '/' | prepend:site.baseurl }}">{% img logo--white.svg %}</a>
+    </div>
+
+    <div class="sidebar__search">
+        <form action="{{'/search/' | prepend: site.baseurl}}" method="get">
+            <input placeholder="Search documentation" name="query">
+            <input type="submit" style="position: absolute; left: -100px; width: 1px; height: 1px;">
+        </form>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="
+                nav__item
+                nav__item--home 
+                {% if page.url == '/' %}active{% endif %}">
+                <a href="{{'/' | prepend: site.baseurl}}" class="nav__item__label nav__item__label--no-accordion">
+                    <div class="nav__item__color"></div>
+                    Docs Home
+                </a>
+            </li>
+
+            {% assign sorted_categories = site.categories | sort: 'order' %}
+            {% for category in sorted_categories %}
+                {% assign docs_in_category = site.docs | where:'category', category.slug %}
+                {% assign subcategories_in_category = category.subcategories %}
+                {% assign unsubcategorized_docs_in_category = docs_in_category | where: 'subcategory', '' | sort: 'order' %}
+
+                {% if docs_in_category.size > 0 %}
+                <li class="
+                    nav__item 
+                    nav__item--{{category.slug}} 
+                    {% if page.url contains category.url %}active{% endif %}">
+                    <a class="nav__item__label" href="{{category.url | prepend: site.baseurl}}">
+                        <div class="nav__item__color" style="background-color: {{category.color}};"></div>
+                        {{category.title}}
+                    </a>
+                    <ul class="nav__sublist nav__sublist">
+
+                        <li>
+                            <ul class="nav__sublist__category nav__sublist__category--no-category">
+                                {% for doc in unsubcategorized_docs_in_category %}
+                                    <li class="nav__sublist__item">
+                                        <a 
+                                            href="{{doc.url | prepend: site.baseurl}}" 
+                                            class="{% if doc.url == page.url %}active{% endif %}">
+                                            {{doc.title}}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+
+                        {% for subcategory_name in subcategories_in_category %}
+                            {% assign docs_in_subcategory = docs_in_category | where: 'subcategory', subcategory_name | sort: 'order' %}
+                            {% if docs_in_subcategory.size > 0 %}
+                                <li>
+                                    <span class="nav__sublist__label">{{subcategory_name}}</span>
+        
+                                    <ul class="nav__sublist__category">
+                                    {% for doc in docs_in_subcategory %}
+                                        <li class="nav__sublist__item">
+                                            <a 
+                                                href="{{doc.url | prepend: site.baseurl}}" 
+                                                class="{% if doc.url == page.url %}active{% endif %}">
+                                                {{doc.title}}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+
+                    </ul>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+        {% unless site.data.config.community_url == '' or site.data.config.community_url == null %}
+        <a href="{{site.data.config.community_url}}" class="nav__community-link">Community</a>
+        {% endunless %}
+        
+    </nav>
+</div>

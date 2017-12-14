@@ -1,0 +1,120 @@
+.callout {
+
+    position: relative;
+    background-color: fade-out($gray-dark, 0.8);
+    border-left: 5px solid $gray-dark;
+    color: $gray-xdark;
+    padding: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 0.5em;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(asset_path("icon__info.svg"));
+    }
+
+    &--no-icon {
+        padding-left: 22px;
+        &:before {
+            display: none;
+        }
+    }
+
+    &--info {
+        background-color: fade-out($teal, 0.8);
+        border-left: 5px solid $teal;
+        &:before {
+            background-image: url(asset_path("icon__info.svg"));
+        }
+    }
+    &--warning {
+        background-color: fade-out($orange, 0.8);
+        border-left: 5px solid $orange;
+        &:before {
+            background-image: url(asset_path("icon__warning.svg"));
+        }
+    }
+    &--danger {
+        background-color: fade-out($pink, 0.8);
+        border-left: 5px solid $pink;
+        &:before {
+            background-image: url(asset_path("icon__danger.svg"));
+        }
+    }
+    &--success {
+        background-color: fade-out($green-light, 0.8);
+        border-left: 5px solid $green-light;
+        &:before {
+            background-image: url(asset_path("icon__important.svg"));
+        }
+    }
+    &--next-steps {
+        background-color: fade-out($purple, 0.8);
+        border-left: 5px solid $purple;
+        &:before {
+            background-image: url(asset_path("icon__important.svg"));
+        }
+        a {
+            display: block;
+            margin-bottom: 20px;
+            color: $black;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                margin-right: 20px;
+                width: 22px;
+                height: 22px;
+                background-image: url(asset_path("icon__article.svg"));
+            }
+        }
+    }
+    &--related-discussion {
+        background-color: fade-out($discourse-color, 0.8);
+        border-left: 5px solid $discourse-color;
+        &:before {
+            background-image: url(asset_path("icon__important.svg"));
+        }
+        a {
+            display: block;
+            margin-bottom: 20px;
+            color: $black;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                margin-right: 20px;
+                width: 22px;
+                height: 22px;
+                background-image: url(asset_path("icon__discourse__discussion.svg"));
+            }
+        }
+    }
+}

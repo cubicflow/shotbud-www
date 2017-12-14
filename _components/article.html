@@ -1,0 +1,57 @@
+{% assign article = include.article %}
+<article class="article article--heading-anchors">
+
+    <header class="article__header">
+
+        {% assign slugged_category = article.category | slugify: 'pretty' %}
+        {% assign category = site.categories | where: 'slug', slugged_category | first %}
+        <span class="article__category" style="color: {{category.color}};">
+            {{category.title}}
+        </span>
+        <h1>
+            {{article.title}}
+        </h1>
+
+        <aside class="article__meta">
+
+            <div class="article__tags">
+                Tags:&nbsp;
+                {% for tag_stub in article.tags %}
+                    {% assign tag_slug = tag_stub | slugify: 'pretty' %}
+                    {% assign tag = site.tags | where:'slug', tag_slug | first %}
+                    <a href="{{tag.url | prepend: site.baseurl}}">
+                       {{tag.title}}
+                    </a>
+                    {% unless forloop.last %},&nbsp;{% endunless %}
+                {% endfor %}
+            </div>
+
+            <div class="article__last-updated">
+                Updated: <span>&nbsp;{{ article.last_updated_date | date_to_long_string }}</span>
+            </div>
+        </aside>
+    </header>
+    
+    {{article.content}}
+
+    <div>
+        {% if page.next_steps.size > 0 %}
+        <h2 id="next-steps">Next Steps</h2>
+        <div class="callout callout--next-steps callout--no-icon no-margin-bottom">
+            {% for link in page.next_steps %}
+            <a href="{{link.url}}">{{link.label}}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.related_discussion.size > 0 %}
+        <h2 id="related-discussions" class="no-border no-margin-top">Related Discussions</h2>
+        <div class="callout callout--related-discussion callout--no-icon">
+            {% for link in page.related_discussion %}
+            <a href="{{link.url}}">{{link.label}}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+</article>

@@ -1,0 +1,16 @@
+_site/
+.sass-cache/
+.asset-cache/
+.jekyll-metadata
+*.sublime-project
+*.sublime-workspace
+
+#VIM undo files
+*.un~
+
+# OS X Hidden files
+.DS_Store
+
+# NPM
+node_modules/
+npm-debug.log

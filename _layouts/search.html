@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="container container--columns">
+    
+    {% include sidebar.html %}
+
+    <main class="content">
+
+        <div class="article__header">
+            <span class="article__category">
+                Search results for:
+            </span>
+            <h1 id="search-term">Search Term</h1>
+            <div class="article__meta">
+            </div>
+        </div>
+
+        <div id="search-results">
+
+        </div>
+
+        {{content}}
+
+    </main>
+    
+</div>

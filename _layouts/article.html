@@ -1,0 +1,15 @@
+---
+layout: default
+show_mobile_table_of_contents: true
+---
+
+{% include header.html %}
+
+<div class="container container--columns">
+    
+    {% include sidebar.html %}
+
+    <main class="content">
+        {% include article.html article=page %}
+    </main>
+</div>
