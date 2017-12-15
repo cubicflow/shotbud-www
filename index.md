@@ -1,5 +1,5 @@
 ---
-title: Panoply Documentation
+title: Shotbud for Apple Watch
 layout: page
 ---
 
@@ -13,7 +13,7 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit [Pano
 
 {% endcallout %}
 
-sit `aspernatur` aut odit aut fugit, sed quia `consequuntur` magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem. 
+sit `aspernatur` aut odit aut fugit, sed quia `consequuntur` magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
 
 ## Discussion
 
