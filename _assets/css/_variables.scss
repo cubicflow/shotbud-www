@@ -50,11 +50,11 @@ $link-hover-decoration: underline;
 
 @font-face {
     font-family: Circular-Book;
-    src: url(../fonts/CircularStd-Book.otf);
+    src: url(asset_path("fonts/CircularStd-Book.otf"));
 }
 @font-face {
     font-family: Circular-Bold;
-    src: url(../fonts/CircularStd-Bold.otf);
+    src: url(asset_path("fonts/CircularStd-Bold.otf"));
 }
 
 $font-family-base: 'Circular-Book', sans-serif;
