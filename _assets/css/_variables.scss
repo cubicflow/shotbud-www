@@ -47,10 +47,20 @@ $link-hover-decoration: underline;
 //
 //  Typography
 //
-$font-family-base: 'Encode Sans Expanded', sans-serif;
+
+@font-face {
+    font-family: Circular-Book;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+@font-face {
+    font-family: Circular-Bold;
+    src: url(../fonts/CircularStd-Bold.otf);
+}
+
+$font-family-base: 'Circular-Book', sans-serif;
 $font-size-base: 14px;
 $font-weight-base: 400;
-$line-height-base: 1.8em;
+$line-height-base: 1.75em;
 
 $font-sizes-base: (
     'xsmall': 0.75em,
@@ -81,9 +91,9 @@ $font-sizes-large: (
 );
 
 
-$headings-font-family: 'Roboto Slab', sans-serif;
-$headings-font-weight: 400;
-$headings-line-height: 1.4em;
+$headings-font-family: 'Circular-Bold', sans-serif;
+$headings-font-weight: 700;
+$headings-line-height: 1.25em;
 $headings-margin-bottom: 1.2em;
 $headings-margin-top: 1.4em;
 $paragraph-margin-bottom: 1.4em;
