@@ -8,10 +8,7 @@
     display: none;
     flex-direction: column;
     @include breakpoint(medium) {
-        display: flex;
-    }
-    @include breakpoint(large) {
-        min-width: 350px;
+        display: none;
     }
 
     @keyframes drop-in {
