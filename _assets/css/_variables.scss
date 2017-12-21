@@ -1,21 +1,18 @@
 //
 //  New Colors
 //
-$background-color-dark: #2B2C30;
-$accent-color-1: #FE9983;
-$accent-color-2: #45CCB0;
-$caption-color: #898E9B;
-$backrgound-color-light: #F6F6F6;
+$gray-xdark: #2B2C30;
+$orange: #FE9983;
+$teal: #45CCB0;
+$gunmetal: #898E9B;
+$gray-xlight: #F6F6F6;
 $gray: #B7B7B7;
-$nav-color: rgba(43,44,48,0.90);
-
 
 //
 //  Old Codebase Colors
 //
 $black: #000000;
-$gray-xdark: #4C4C4C;
-$gray-dark: #727C8F;
+$gray-dark: $gunmetal;
 $gray-light: #F2F2F2;
 $white: #FFFFFF;
 
@@ -44,6 +41,14 @@ $container-max-width: 1440px;
 //
 //  Element styles and colors
 //
+$background-color-dark: $gray-xdark;
+$accent-color-1: $orange;
+$accent-color-2: $teal;
+$caption-color: $gunmetal;
+$backrgound-color-light: $gray-xlight;
+
+$nav-color: transparentize($background-color-dark, 0.1);
+
 $body-color: $white;
 $body-bg: $background-color-dark;
 $text-muted: $caption-color;
