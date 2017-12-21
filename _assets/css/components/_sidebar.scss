@@ -4,7 +4,7 @@
     display: none;
     min-width: 285px;
     min-height: 100vh;
-    background-color: darken($background-color-dark, 5);
+    background-color: darken($background-color-dark, 5%);
     display: none;
     flex-direction: column;
     @include breakpoint(medium) {
@@ -92,19 +92,19 @@
             font-weight: 400;
             color: $white;
             background-image: url(asset_path("icon__search.svg"));
-            background-color: darken($background-color-dark, 3);
+            background-color: darken($background-color-dark, 3%);
             background-position: left 27px center;
             background-repeat: no-repeat;
-            border-bottom: 2px solid darken($background-color-dark, 3);
+            border-left: 2px solid darken($background-color-dark, 3%);
             transition: border 0.2s;
 
             &:hover {
-                border-bottom: 2px solid $accent-color-1;
+                border-left: 2px solid $accent-color-1;
             }
 
             &:focus {
                 outline: none;
-                border-bottom: 2px solid $accent-color-2;
+                border-left: 2px solid $accent-color-2;
             }
         }
     }
@@ -123,7 +123,6 @@
         list-style-type: none;
         padding: 0px 0px 10px 0px;
         margin: 0px;
-        border-bottom: 1px solid $gray;
     }
 
     &__community-link {
@@ -164,7 +163,7 @@
     &__item {
         @include font-size(large);
         margin-bottom: 15px;
-        padding-left: 36px;
+        padding-left: 5px;
         position: relative;
 
         &.active {
@@ -232,11 +231,11 @@
             display: block;
             margin-top: 20px;
             margin-bottom: 20px;
-            color: $black;
+            color: $gunmetal;
             text-decoration: none;
 
             &:hover {
-                color: lighten($black, 30%);
+                color: lighten($gunmetal, 30%);
                 text-decoration: underline;
             }
         }
