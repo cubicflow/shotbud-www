@@ -4,7 +4,7 @@
     display: none;
     min-width: 285px;
     min-height: 100vh;
-    background-color: $gray-light;
+    background-color: darken($background-color-dark, 5);
     display: none;
     flex-direction: column;
     @include breakpoint(medium) {
@@ -90,19 +90,21 @@
             padding-left: 65px;
             @include responsive-font-size(large);
             font-weight: 400;
+            color: $white;
             background-image: url(asset_path("icon__search.svg"));
+            background-color: darken($background-color-dark, 3);
             background-position: left 27px center;
             background-repeat: no-repeat;
-            border-left: 8px solid #FFF;
+            border-bottom: 2px solid darken($background-color-dark, 3);
             transition: border 0.2s;
 
             &:hover {
-                border-left: 8px solid #4D5DA0;
+                border-bottom: 2px solid $accent-color-1;
             }
 
             &:focus {
                 outline: none;
-                border-left: 8px solid $lime-green;
+                border-bottom: 2px solid $accent-color-2;
             }
         }
     }
