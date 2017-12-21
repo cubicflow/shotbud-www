@@ -50,9 +50,9 @@ $text-muted: $caption-color;
 
 $discourse-color: #7289DA;
 
-$link-color: $green;
-$link-hover-color: $green-light;
-$link-decoration: underline;
+$link-color: $accent-color-1;
+$link-hover-color: lighten($accent-color-1, 5);
+$link-decoration: none;
 $link-hover-decoration: underline;
 
 //
