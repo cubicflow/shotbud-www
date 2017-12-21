@@ -4,7 +4,7 @@ layout: page
 show_mobile_table_of_contents: true
 ---
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Shotbud is an interactive tool for shooters to track and visualize their shooting sessions while improving performance and reinforcing responsible gun ownership. Shotbud utilizes the wealth of sensors on Apple Watch for increased shot detection accuracy and shooting metrics -- not possible with standard smartphone-based or analog timers.
 
 {% callout info %}
 
