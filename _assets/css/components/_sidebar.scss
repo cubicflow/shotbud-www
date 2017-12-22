@@ -5,8 +5,8 @@
     min-width: 285px;
     min-height: 100vh;
     background-color: darken($background-color-dark, 5%);
-    display: none;
     flex-direction: column;
+
     @include breakpoint(medium) {
         display: none;
     }
@@ -160,6 +160,11 @@
         @include font-size(large);
 
         position: relative;
+
+        span {
+            padding-top: 4px;
+            font-size: 0.8em;
+        }
 
         &__large {
             display: inline-block;
