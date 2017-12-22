@@ -11,6 +11,11 @@ body {
         display: flex;
         align-items: stretch;
     }
+
+    &.active {
+        overflow: none;
+        position: fixed;
+    }
 }
 
 .content {
