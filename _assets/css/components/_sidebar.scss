@@ -112,12 +112,6 @@
 
 .nav {
 
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 64px;
-    height: 100%;
-
     &__large {
         display: none;
         padding-top: 8px;
@@ -125,6 +119,11 @@
         padding-left: 30px;
         padding-bottom: 0px;
         height: 80px;
+
+        // @include breakpoint(small){
+        //     display: inline-block;
+        //     height: 80px;
+        // }
 
         @include breakpoint(medium){
             display: inline-block;
@@ -140,18 +139,26 @@
 
     &__list {
         list-style-type: none;
-        padding: 0px 0px 10px 0px;
         margin: 0px;
+        padding-left: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         &__large {
-                display: inline-block;
+            display: inline-block;
+            padding-left: 15px;
+            padding-top: 18px;
+            padding-bottom: 0px;
+
+            @include breakpoint(large){
+                padding-top: 20px;
+            }
         }
     }
 
     &__item {
         @include font-size(large);
-        margin-bottom: 15px;
-        padding-left: 5px;
+
         position: relative;
 
         &__large {
@@ -160,10 +167,11 @@
 
         &__label {
             display: block;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             color: $gunmetal;
             text-decoration: none;
+            text-align: center;
 
             &:hover {
                 color: lighten($gunmetal, 30%);
@@ -172,7 +180,13 @@
 
             &__large {
                 display: inline-block;
-                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-right: 36px;
+                
+                @include breakpoint(large){
+                    padding-right: 44px;
+                }
             }
         }
     }
