@@ -30,6 +30,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+        @include breakpoint(medium){
+            padding: 0px 32px;
+        }
+
+        @include breakpoint(large){
+            padding: 0px 42px;
+        }
     }
 
     &__logo {
