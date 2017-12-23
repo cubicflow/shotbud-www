@@ -3,11 +3,11 @@ title: Shotbud for Apple Watch
 layout: page
 ---
 
-<header class="homepage-cover">
+<header class="homepage-cover cf-responsive">
 
 </header>
 
-Shotbud is an interactive tool for shooters to track and visualize their shooting sessions while improving performance and reinforcing responsible gun ownership. Shotbud utilizes the wealth of sensors on Apple Watch for increased shot detection accuracy and shooting metrics -- not possible with standard smartphone-based or analog timers.
+<!-- Shotbud is an interactive tool for shooters to track and visualize their shooting sessions while improving performance and reinforcing responsible gun ownership. Shotbud utilizes the wealth of sensors on Apple Watch for increased shot detection accuracy and shooting metrics -- not possible with standard smartphone-based or analog timers.
 
 {% callout info %}
 
@@ -27,4 +27,4 @@ Perspiciatis unde omnis iste `const query = getQueryStrings();` natus error sit 
 
 Check out our sample article with placeholder content on [Using Placeholder Data Effectively]({{site.url}}/ingesting-data/)
 
-{% endcallout %}
+{% endcallout %} -->

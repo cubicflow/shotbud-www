@@ -10,9 +10,9 @@
         min-width: 320px;
         z-index: 10;
         overflow: hidden;
-        -webkit-backdrop-filter: blur(20px); /* Safari 9+ */
-        backdrop-filter: blur(20px); /* Chrome and Opera */
-        background-color: $nav-color;
+        // -webkit-backdrop-filter: blur(20px); /* Safari 9+ */
+        // backdrop-filter: blur(20px); /* Chrome and Opera */
+        // background-color: $nav-color;
 
         @include breakpoint(medium){
             height: 80px;

@@ -21,15 +21,8 @@ body {
 .content {
     width: 100%;
     background-color: $body-bg;
-    padding: 30px 20px;
+    padding: 0px;
     margin: 0px auto;
-    @include breakpoint(medium){
-        padding: 48px 30px 30px 30px;
-        width: 75%;
-    }
-    @include breakpoint(large){
-        padding: 60px 60px 60px 60px;
-    }
 }
 
 .no-border {
