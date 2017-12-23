@@ -7,6 +7,7 @@ a {
 h1,h2,h3,h4,h5,h6 {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
+    letter-spacing: 0.04em;
 }
 
 h1 {
@@ -27,6 +28,7 @@ h3 {
     @include responsive-font-size(xlarge);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
+    font-family: Circular-Book; 
 }
 h4 {
     @include font-size(large);
