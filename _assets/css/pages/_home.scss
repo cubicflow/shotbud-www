@@ -2,19 +2,23 @@ h3 {
   color: $accent-color-1;
 }
 
+.masthead {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
 .homepage-cover {
   width: 100%;
   height: 100vh;
   margin-top: 0px;
   max-width: none;
-  min-width: none;
   min-height: 460px;
   max-height: 960px;
   position: absolute;
   top: 0px;
   left: 0px;
   background-image: url(asset_path("hero--shotbud-intro@2x.jpg"));
-  //background-attachment: fixed;
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -23,7 +27,7 @@ h3 {
     height: 100vh;
   }
 
-  &__text-container {
+  &__container {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
