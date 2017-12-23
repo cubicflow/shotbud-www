@@ -3,6 +3,10 @@ title: Shotbud for Apple Watch
 layout: page
 ---
 
+<header class="homepage-cover">
+
+</header>
+
 Shotbud is an interactive tool for shooters to track and visualize their shooting sessions while improving performance and reinforcing responsible gun ownership. Shotbud utilizes the wealth of sensors on Apple Watch for increased shot detection accuracy and shooting metrics -- not possible with standard smartphone-based or analog timers.
 
 {% callout info %}

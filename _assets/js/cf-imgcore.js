@@ -1,7 +1,3 @@
-//
-// Responsive Images
-// --------------------------------------------------
-
 if (!cf) {
     var cf = {};
 }
@@ -16,6 +12,16 @@ cf.isRetina = (opts) => {
     if (window.matchMedia) {
         var mq = window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
         return (mq && mq.matches || (window.devicePixelRatio > 1));
+    } else {
+        return false;
+    }
+}
+
+cf.isMobile = () => {
+    var mobileDevice = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (cf.isSmallBrowser || mobileDevice) {
+        return true;
     } else {
         return false;
     }
@@ -220,13 +226,9 @@ cf.imgSwap = (opts) => {
 };
 
 
-
-
-var options = {
-    retinaSuffix: '@2x',
-    addMediumSuffix: false,
-    addLargeSuffix: false,
-    addRetinaSuffix: true,
-};
-
-var responsiveImages = cf.imgSwap(options);
+// Export CommonJS module
+if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+        exports = module.exports = cf;
+    }
+}
