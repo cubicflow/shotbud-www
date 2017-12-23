@@ -1,0 +1,18 @@
+.homepage-cover {
+  width: 100%;
+  height: 90vh;
+  margin-top: -80px;
+  max-width: none;
+  min-width: none;
+  min-height: 460px;
+  max-height: 960px;
+  position: relative;
+  background-image: url(asset_path("hero--shotbud-intro@2x.jpg"));
+  //background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  @include breakpoint(medium) {
+    height: 98vh;
+  }
+}
