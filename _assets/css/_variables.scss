@@ -39,7 +39,7 @@ $container-max-width: 1440px;
 //
 //  Element styles and colors
 //
-$background-color-dark: $gray-xdark;
+$background-color-dark: $black;
 $accent-color-1: $orange;
 $accent-color-2: $teal;
 $caption-color: $gunmetal;
@@ -83,7 +83,7 @@ $font-sizes-base: (
     'large': 1.0em,
     'xlarge': 1.5em,
     'xxlarge': 1.8em,
-    'xxxlarge': 2em,
+    'xxxlarge': 4em,
 );
 $font-sizes-medium: (
     'xsmall': 0.75em,
@@ -92,7 +92,7 @@ $font-sizes-medium: (
     'large': 1.14em,
     'xlarge': 1.5em,
     'xxlarge': 2.14em,
-    'xxxlarge': 2.85em,
+    'xxxlarge': 7em,
 );
 $font-sizes-large: (
     'xsmall': 0.8em,
@@ -101,7 +101,7 @@ $font-sizes-large: (
     'large': 1.14em,
     'xlarge': 1.7em,
     'xxlarge': 2.24em,
-    'xxxlarge': 2.95em,
+    'xxxlarge': 8em,
 );
 
 
