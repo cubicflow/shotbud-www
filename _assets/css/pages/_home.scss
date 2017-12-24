@@ -217,15 +217,15 @@ h3 {
   }
 
   &--image-a {
-    min-height: 600px;
+    min-height: 520px;
 
     @include breakpoint(medium) {
-      min-height: 800px;
+      min-height: 700px;
     }
   }
 
   &--image-b {
-    min-height: 400px;
+    min-height: 330px;
 
     @include breakpoint(medium) {
       min-height: 500px;
@@ -233,18 +233,10 @@ h3 {
   }
 
   &--image-c {
-    min-height: 600px;
+    min-height: 520px;
 
     @include breakpoint(medium) {
-      min-height: 800px;
-    }
-  }
-
-  &--image-d {
-    min-height: 600px;
-
-    @include breakpoint(medium) {
-      min-height: 800px;
+      min-height: 700px;
     }
   }
 
@@ -284,7 +276,7 @@ h3 {
 
 .hero-watch-b {
   position: absolute;
-  top: 15%;
+  top: 6.5%;
   right: 13.5%;
   
   img {
