@@ -18,8 +18,8 @@ layout: page
     </div>
     <div class="hero-feature hero-feature--row-1">
         <div class="hero-feature__left">
-            <div class="hero-phone-a"><img src="/assets/images/hero-phone-a@2x.png"></div>
-            <div class="hero-watch-a"><img src="/assets/images/hero-watch-a@2x.png"></div>
+            <div class="hero-phone-a"><img src="assets/hero-phone-a@2x.png"></div>
+            <div class="hero-watch-a"><img src="assets/hero-watch-a@2x.png"></div>
         </div>
         <div class="hero-feature__right">
             <h3>Motion + Audio detection</h3>
