@@ -22,11 +22,16 @@ body {
 
 .container-body {
     width: 100%;
+    max-width: 1140px;
     padding: 20px 20px 40px 20px;
     margin: 0px auto;
 
     @include breakpoint(medium) {
-        width: 75%;
+        width: 90%;
+    }
+
+    @include breakpoint(large) {
+        width: 90%;
     }
 }
 

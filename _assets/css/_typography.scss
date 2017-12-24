@@ -7,20 +7,18 @@ a {
 h1,h2,h3,h4,h5,h6 {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
-    letter-spacing: 0.04em;
 }
 
 h1 {
     @include responsive-font-size(xxxlarge);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
+    letter-spacing: 0.04em;
 }
 
 h2 {
     @include responsive-font-size(xxlarge);
     line-height: $headings-line-height;
-    padding-top: $headings-margin-top;
-    border-top: 1px solid darken($gray-light, 3%);
     margin-top: $headings-margin-top;
 }
 
@@ -30,6 +28,7 @@ h3 {
     padding-top: $headings-margin-top;
     font-family: Circular-Book;
     font-weight: 400;
+    letter-spacing: 0.04em;
 }
 h4 {
     @include font-size(large);
