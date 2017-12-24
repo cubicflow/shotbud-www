@@ -285,11 +285,11 @@ h3 {
 .hero-watch-b {
   position: absolute;
   top: 15%;
-  right: 15%;
+  right: 13%;
   
   img {
-    width: 230px;
-    height: 298px;
+    width: 240px;
+    height: 311px;
 
     @include breakpoint(medium) {
       width: 270px;
