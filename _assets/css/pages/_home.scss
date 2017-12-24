@@ -8,7 +8,7 @@ h3 {
   padding: 0px;
   height: 70vh;
   min-height: 420px;
-  max-height: 500px;
+  max-height: 550px;
 
   @include breakpoint(small) {
     height: 70vh;
@@ -91,14 +91,14 @@ h3 {
   position: relative;
   width: 80%;
   margin: 0px auto;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 
   @include breakpoint(small) {
     width: 75%;
   }
 
   @include breakpoint(medium) {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   h3 {
