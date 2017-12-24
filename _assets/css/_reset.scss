@@ -27,7 +27,7 @@ html {
   line-height: 1.15; // 3
   -webkit-text-size-adjust: 100%; // 4
   -ms-text-size-adjust: 100%; // 4
-  -ms-overflow-style: scrollbar; // 5
+  -ms-overflow-style: -ms-autohiding-scrollbar; // 5
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 6
 }
 
