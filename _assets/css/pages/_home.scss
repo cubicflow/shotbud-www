@@ -93,10 +93,18 @@ h3 {
 
 .intro-text {
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
   h3 {
+    @include font-size(large);
     color: $white;
-    line-height: 2em;
     text-align: center;
+    line-height: 2.5em;
+
+    @include breakpoint(medium) {
+      @include responsive-font-size(xlarge);
+      line-height: 2em;
+    }
   }
 }
