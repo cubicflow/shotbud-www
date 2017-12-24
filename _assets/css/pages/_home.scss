@@ -225,7 +225,7 @@ h3 {
   }
 
   &--image-b {
-    min-height: 330px;
+    min-height: 360px;
 
     @include breakpoint(medium) {
       min-height: 500px;
@@ -276,7 +276,7 @@ h3 {
 
 .hero-watch-b {
   position: absolute;
-  top: 6.5%;
+  top: 15%;
   right: 13.5%;
   
   img {
