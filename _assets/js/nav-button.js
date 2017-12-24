@@ -1,12 +1,10 @@
 !(function () {
 	const navButton = document.querySelector(".nav-button");
 	const sidebar = document.querySelector(".sidebar");
-	const container = document.querySelector(".container");
-
+	
 	navButton.addEventListener("click", () => {
 		navButton.classList.toggle("active");
 		sidebar.classList.toggle("active");
-		container.classList.toggle("active");
 	});
 })();
 

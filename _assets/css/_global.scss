@@ -5,17 +5,6 @@ body {
 .container {
     @include container();
     margin: 0px 0px 0px 0px;
-
-    &--columns {
-        min-height: 90vh;
-        display: flex;
-        align-items: stretch;
-    }
-
-    &.active {
-        overflow: none;
-        position: fixed;
-    }
 }
 
 .content {
@@ -23,6 +12,22 @@ body {
     background-color: $body-bg;
     padding: 0px;
     margin: 0px auto;
+
+    &--cover {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.container-body {
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    margin: 0px auto;
+
+    @include breakpoint(medium) {
+        width: 75%;
+    }
 }
 
 .no-border {

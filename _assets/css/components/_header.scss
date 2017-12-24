@@ -1,6 +1,5 @@
 .head {
     @include responsive-font-size(large);
-    height: 64px;
     display: block;
 
     &__fixture {
@@ -61,6 +60,15 @@
 
     &__toc {
         float: right;
+    }
+
+    &__coming-soon {
+        float: right;
+        display: none;
+
+        @include breakpoint(medium) {
+            display: inline-block;
+        }
     }
 
 }

@@ -4,27 +4,40 @@ h3 {
 
 .masthead {
   width: 100%;
-  height: 100vh;
   margin-top: 0px;
+  padding: 0px;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 500px;
+
+  @include breakpoint(small) {
+    height: 70vh;
+    min-height: 700px;
+    max-height: 700px;
+  }
+
+  @include breakpoint(medium) {
+    height: 80vh;
+    min-height: 980px;
+    max-height: 980px;
+  }
 }
 
 .homepage-cover {
   width: 100%;
-  height: 100vh;
+  height: 980px;
   margin-top: 0px;
   max-width: none;
-  min-height: 460px;
-  max-height: 960px;
   position: absolute;
   top: 0px;
   left: 0px;
   background-image: url(asset_path("hero--shotbud-intro@2x.jpg"));
-  background-position: center top;
-  background-size: contain;
+  background-position: top;
+  background-size: 115%;
   background-repeat: no-repeat;
 
-  @include breakpoint(medium) {
-    height: 100vh;
+  @include breakpoint(small) {
+    background-size: contain;
   }
 
   &__container {
@@ -38,7 +51,7 @@ h3 {
       text-transform: uppercase;
       letter-spacing: 0.1em;
       line-height: 1em;
-      margin-top: 1.25em;
+      margin-top: 1.5em;
       margin-bottom: 0px;
       padding-bottom: 0px;
 
@@ -59,11 +72,15 @@ h3 {
     }
 
     h3 {
-      margin-top: 0.25em;
+      margin-top: 0.5em;
       padding-top: 0px;
       line-height: 1em;
       text-align: center;
       margin-right: 0.6em;
+
+      @include breakpoint(small) {
+        margin-top: 0.25em;
+      }
 
       @include breakpoint(medium) {
         text-align: right;
@@ -72,4 +89,14 @@ h3 {
 
   }
 
+}
+
+.intro-text {
+  position: relative;
+
+  h3 {
+    color: $white;
+    line-height: 2em;
+    text-align: center;
+  }
 }

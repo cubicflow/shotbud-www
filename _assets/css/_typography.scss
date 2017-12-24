@@ -28,24 +28,31 @@ h3 {
     @include responsive-font-size(xlarge);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
-    font-family: Circular-Book; 
+    font-family: Circular-Book;
+    font-weight: 400;
 }
 h4 {
     @include font-size(large);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
+    font-family: Circular-Book;
+    font-weight: 400;
 }
 
 h5 {
     @include font-size(large);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
+    font-family: Circular-Book;
+    font-weight: 400;
 }
 
 h6 {
     @include font-size(medium);
     line-height: $headings-line-height;
     padding-top: $headings-margin-top;
+    font-family: Circular-Book;
+    font-weight: 400;
 }
 
 .text-pink {
