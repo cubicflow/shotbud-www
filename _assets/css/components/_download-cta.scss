@@ -1,0 +1,33 @@
+.download-cta {
+    float: left;
+    width: 100%;
+    background-color: $background-color-light;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+            color: $black;
+            margin-bottom: 0px;
+            margin-top: 25px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            @include breakpoint(medium) {
+                margin-top: 10px;
+            }
+
+            @include breakpoint(large) {
+                margin-top: 0px;
+            }
+        }
+
+    h3 {
+        color: $accent-color-1;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+}
