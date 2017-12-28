@@ -12,11 +12,15 @@
 
     &__container {
         margin: 0px auto;
-        width: 90%;
+        max-width: 960px;
+        width: 85%;
 
         @include breakpoint(medium){
-            width: 75%;
-            max-width: 960px;
+            width: 90%;
+        }
+
+        @include breakpoint(large){
+            width: 70%;
         }
     }
     
@@ -40,7 +44,22 @@
         }
     }
 
+    &__text {
+        display: inline-block;
+
+        @include breakpoint(medium) {
+            float: left;
+            margin-left: 40px;
+            text-align: left;
+        }
+    }
+
     &__app-icon {
+        
+        @include breakpoint (medium){
+            float: left;
+        }
+
         img {
             width: 86px;
             height: 86px;
