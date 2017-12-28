@@ -41,8 +41,7 @@
     }
 
     &__question {
-        display: flex;
-        align-items: center;
+        margin-bottom: 40px;
 
         &__show {
             display: inline-block;
@@ -50,10 +49,22 @@
 
         &__text {
             display: inline-block;
+            margin-left: 24px;
+
+            @include breakpoint(medium) {
+                margin-left: 36px;
+            }
         }
 
         &__answer {
             display: block;
+            background-color: $white;
+            margin: 30px 18px 30px 18px;
+            padding: 20px;
+
+            @include breakpoint(medium) {
+                margin: 30px 66px 30px 66px;
+            }
         }
     }
 }
