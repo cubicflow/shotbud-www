@@ -1,0 +1,13 @@
+.faq {
+    float: left;
+    width: 100%;
+    background-color: $background-color-light;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint (medium) {
+        padding: 20px 0px 20px 0px;
+        height: 200px;
+    }
+}
