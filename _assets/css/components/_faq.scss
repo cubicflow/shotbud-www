@@ -32,6 +32,7 @@
     &__questions {
         margin-top: 60px;
         margin-bottom: 60px;
+        color: $black;
 
         @include breakpoint(medium) {
             margin-top: 80px;
@@ -40,13 +41,19 @@
     }
 
     &__question {
+        display: flex;
+        align-items: center;
 
         &__show {
-            
+            display: inline-block;
+        }
+
+        &__text {
+            display: inline-block;
         }
 
         &__answer {
-            
+            display: block;
         }
     }
 }
