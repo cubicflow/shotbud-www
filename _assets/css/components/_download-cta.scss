@@ -2,9 +2,65 @@
     float: left;
     width: 100%;
     background-color: $background-color-light;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
     display: flex;
     align-items: center;
+
+    @include breakpoint (medium) {
+        padding: 20px 0px 20px 0px;
+    }
+
+    &__container {
+        margin: 0px auto;
+        width: 90%;
+
+        @include breakpoint(medium){
+            width: 75%;
+            max-width: 960px;
+        }
+    }
+    
+    &__left {
+        margin: 0px auto;
+        text-align: center;
+
+        @include breakpoint (medium) {
+            margin: 0px;
+            float: left;
+        }
+    }
+
+    &__right {
+        margin: 0px auto;
+        text-align: center;
+        
+        @include breakpoint (medium) {
+            margin: 0px;
+            float: right;
+        }
+    }
+
+    &__app-icon {
+        img {
+            width: 86px;
+            height: 86px;
+
+            @include breakpoint (medium) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+    }
+
+    &__app-store {
+        margin-top: 30px;
+
+        img {
+            width: 180px;
+            height: 60px;
+        }
+    }
 
     h2 {
             color: $black;
