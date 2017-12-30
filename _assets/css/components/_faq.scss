@@ -2,17 +2,22 @@
     float: left;
     width: 100%;
     background-color: $background-color-light;
-    padding: 50px 0px 50px 0px;
+    padding: 60px 0px 60px 0px;
     display: flex;
     align-items: center;
 
     @include breakpoint (medium) {
-        padding: 80px 0px 80px 0px;
+        padding: 70px 0px 70px 0px;
+    }
+
+    @include breakpoint (large) {
+        padding: 100px 0px 80px 0px;
     }
 
     h3 {
         color: $black;
         text-align: center;
+        margin-bottom: 4em;
     }
 
     &__container {
@@ -59,11 +64,11 @@
         &__answer {
             display: block;
             background-color: $white;
-            margin: 30px 18px 30px 18px;
+            margin: 30px 18px 40px 18px;
             padding: 20px;
 
             @include breakpoint(medium) {
-                margin: 30px 66px 30px 66px;
+                margin: 30px 66px 50px 66px;
             }
         }
     }
