@@ -295,7 +295,16 @@ h3 {
 .hero-watch-b {
   position: absolute;
   top: 15%;
-  right: 13.5%;
+  right: 24%;
+
+  @include breakpoint(medium) {
+    right: 27%;
+    right: 28%;
+  }
+
+   @include breakpoint(large) {
+    right: 34%;
+  }
   
   img {
     width: 240px;
@@ -308,10 +317,40 @@ h3 {
   }
 }
 
+.hero-bullet-b {
+  position: absolute;
+  top: 48.5%;
+  right: 1%;
+
+  @include breakpoint(medium) {
+    top: 41.5%;
+    right: 9%;
+  }
+
+  @include breakpoint(large) {
+    right: 11%;
+  }
+  
+  img {
+    width: 190px;
+    height: 190px;
+
+    @include breakpoint(medium) {
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
+
 .hero-phone-c {
   position: absolute;
   top: -5%;
-  left: 6%;
+  left: -10%;
+
+  @include breakpoint (small) {
+    top: -5%;
+    left: 6%;
+  }
 
   img {
     width: 280px;
@@ -327,7 +366,12 @@ h3 {
 .hero-watch-c {
   position: absolute;
   top: 24%;
-  left: 38%;
+  left: 30%;
+
+  @include breakpoint (small) {
+    top: 24%;
+    left: 38%;
+  }
   
   img {
     width: 200px;
