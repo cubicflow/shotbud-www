@@ -98,11 +98,11 @@ h3 {
   }
 
   @include breakpoint(medium) {
-    margin-bottom: 200px;
+    margin-bottom: 175px;
   }
 
   @include breakpoint(large) {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
 
   h3 {
@@ -119,13 +119,26 @@ h3 {
 
   &__app-store {
     text-align: center;
-    width: 180px;
-    height: 60px;
+    margin: 0px auto;
+    margin-top: 4em;
 
     @include breakpoint(medium) {
-      display: none;
+      margin-top: 6em;
     }
+
+    @include breakpoint(large) {
+      margin-top: 8em;
+    }
+
+    img {
+      @include breakpoint(medium) {
+        width: 180px;
+        height: 60px;
+      }
+    }
+
   }
+
 }
 
 .hero-features {
