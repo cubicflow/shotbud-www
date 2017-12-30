@@ -23,7 +23,7 @@
     &__container {
         margin: 0px auto;
         max-width: 960px;
-        width: 85%;
+        width: 95%;
 
         @include breakpoint(medium){
             width: 90%;
@@ -35,8 +35,7 @@
     }
 
     &__questions {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin: 60px 0px 60px 0px;
         color: $black;
 
         @include breakpoint(medium) {
@@ -45,19 +44,29 @@
         }
     }
 
-    &__question {
-        margin-bottom: 40px;
+    &__item {
+        margin: 0px 0px 40px 0px;
+
+        &__question {
+           display: flex;
+            align-items: center; 
+        }
 
         &__show {
-            display: inline-block;
+            width: 36px;
+            height: 36px;
+
+            img {
+                width: 36px;
+                height: 36px;
+            }
         }
 
         &__text {
-            display: inline-block;
-            margin-left: 24px;
+            padding-left: 24px;
 
             @include breakpoint(medium) {
-                margin-left: 36px;
+                padding-left: 30px;
             }
         }
 
