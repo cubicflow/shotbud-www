@@ -1,10 +1,14 @@
 !(function () {
 	const navButton = document.querySelector(".nav-button");
 	const sidebar = document.querySelector(".sidebar");
+	const fixture = document.querySelector(".head__fixture");
+	const pageContent = document.querySelector(".content");
 	
 	navButton.addEventListener("click", () => {
 		navButton.classList.toggle("active");
 		sidebar.classList.toggle("active");
+		fixture.classList.toggle("active");
+		pageContent.classList.toggle("active");
 	});
 })();
 

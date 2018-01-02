@@ -21,6 +21,10 @@
         @include breakpoint(large){
             height: 100px;
         }
+
+        &.active {
+            position: fixed;
+        }
     }
 
     &__content {
