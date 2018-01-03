@@ -4,11 +4,6 @@ body {
     overflow-y: scroll;
 }
 
-.skrollr-obj {
-    height: 0px;
-    width: 0px;
-}
-
 .container {
     @include container();
     margin: 0px 0px 0px 0px;
