@@ -7,6 +7,8 @@ body {
 .container {
     @include container();
     margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .content {
@@ -14,6 +16,8 @@ body {
     background-color: $body-bg;
     padding: 0px;
     margin: 0px auto;
+    overflow: hidden;
+    overflow-y: scroll;
 
     &.active {
         overflow: hidden;
