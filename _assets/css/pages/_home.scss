@@ -9,6 +9,12 @@ h3 {
   height: 70vh;
   min-height: 420px;
   max-height: 550px;
+  opacity: 0.0;
+
+  &.active {
+    opacity: 1.0;
+    transition: 0.7s all;
+  }
 
   @include breakpoint(small) {
     height: 70vh;
