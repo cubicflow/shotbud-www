@@ -2,6 +2,12 @@ body {
     min-width: 320px;
     overflow: hidden;
     overflow-y: scroll;
+
+    &.active {
+        overflow: hidden;
+        height: 100vh;
+        overflow-y: hidden;
+    }
 }
 
 .container {
@@ -9,6 +15,12 @@ body {
     margin: 0px 0px 0px 0px;
     overflow: hidden;
     overflow-y: scroll;
+
+    &.active {
+        overflow: hidden;
+        height: 100vh;
+        overflow-y: hidden;
+    }
 }
 
 .content {
@@ -22,6 +34,7 @@ body {
     &.active {
         overflow: hidden;
         height: 100vh;
+        overflow-y: hidden;
     }
 
     &--cover {
