@@ -206,7 +206,7 @@ h3 {
     text-align: left;
 
     @include breakpoint(large) {
-      height: 800px;
+      height: 900px;
     }
   }
 
@@ -215,7 +215,7 @@ h3 {
     text-align: right;
 
     @include breakpoint(large) {
-      height: 650px;
+      height: 900px;
     }
   }
 
@@ -224,16 +224,7 @@ h3 {
     text-align: left;
 
     @include breakpoint(large) {
-      height: 800px;
-    }
-  }
-
-  &--row-4 {
-    position: relative;
-    text-align: right;
-
-    @include breakpoint(large) {
-      height: 800px;
+      height: 900px;
     }
   }
 
