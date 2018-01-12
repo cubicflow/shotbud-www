@@ -47,6 +47,15 @@
     &__item {
         margin: 0px 0px 40px 0px;
 
+        &.active {
+            .faq__item__answer {
+                display: block;
+            }
+            .faq__item__show {
+                transform: rotate(45deg);
+            }
+        }
+
         &__question {
            display: flex;
             align-items: center; 
@@ -71,7 +80,7 @@
         }
 
         &__answer {
-            display: block;
+            display: none;
             background-color: $white;
             margin: 30px 18px 40px 18px;
             padding: 20px;
