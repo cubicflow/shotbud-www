@@ -17,10 +17,10 @@ $(document).ready(function () {
     
     const imgSwapOptions = {
         responsiveClass: '.cf-responsive',
-        mediumSuffix: '-med',
-        addMediumSuffix: true,
-        largeSuffix: '-large',
-        addLargeSuffix: true,
+        mediumSuffix: '--medium',
+        addMediumSuffix: false,
+        largeSuffix: '--large',
+        addLargeSuffix: false,
         addRetinaSuffix: true,
         retinaSuffix: '@2x',
         smallBrowserWidth: 600,
