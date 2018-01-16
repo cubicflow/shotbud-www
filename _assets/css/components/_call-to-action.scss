@@ -4,7 +4,12 @@
     background-color: $gray-xdark;
     
     .container-body {
-        padding: 100px 0px;
+        padding: 100px 20px;
+        max-width: 960px;
+
+        @include breakpoint(medium){
+            padding: 100px 40px;
+        }
     }
 
     h3 {
@@ -18,7 +23,8 @@
 
     input {
         color: $white;
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         border: 0px;
         border-bottom: 1px solid $gunmetal;
         background-color: transparent;
@@ -31,15 +37,29 @@
             outline: none;
             border-bottom: 1px solid $orange;
         } 
+
+        &::placeholder {
+            color: $gray-light;
+        }
     }
 
     button {
         background-image: linear-gradient(-180deg, #ED5736 0%, #D12929 72%, #F42248 100%);
-        border-radius: 40px;
+        border-radius: 32px;
         border: 0px;
-        width: 300px;
-        height: 80px;
+        width: 100%;
+        max-width: 300px;
+        height: 64px;
         color: $white;
-        font-size: 32px;
+        @include responsive-font-size(xlarge);
+        transition: all 0.1s;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+
+        &:hover {
+            text-decoration: none;
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,0.30);
+            transform: scale(1.05, 1.05);
+            transition-delay: 0.0s;
+        }
     }
 }
