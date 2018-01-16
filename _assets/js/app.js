@@ -13,7 +13,21 @@ $(document).ready(function () {
     const navButton = document.querySelector(".nav-button");
 	const sidebar = document.querySelector(".sidebar");
 	const fixture = document.querySelector(".head__fixture");
-	const pageContent = document.querySelector(".content");
+    const pageContent = document.querySelector(".content");
+    
+    const imgSwapOptions = {
+        responsiveClass: '.cf-responsive',
+        mediumSuffix: '-med',
+        addMediumSuffix: true,
+        largeSuffix: '-large',
+        addLargeSuffix: true,
+        addRetinaSuffix: true,
+        retinaSuffix: '@2x',
+        smallBrowserWidth: 600,
+        mediumBrowserWidth: 1023,
+        largeBrowserWidth: 1280
+    };
+    const responsiveImages = cf.imgSwap(imgSwapOptions);
 
     navigation.classList.toggle("appear");
     masthead.classList.toggle("appear");
