@@ -9,6 +9,11 @@
 $(document).ready(function () {
     const navigation = document.querySelector(".head__fixture");
     const masthead = document.querySelector(".masthead");
+    
+    const navButton = document.querySelector(".nav-button");
+	const sidebar = document.querySelector(".sidebar");
+	const fixture = document.querySelector(".head__fixture");
+	const pageContent = document.querySelector(".content");
 
     navigation.classList.toggle("appear");
     masthead.classList.toggle("appear");
@@ -40,6 +45,13 @@ $(document).ready(function () {
         // Figure out element to scroll to
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+        // Hide mobile nav if shown
+        navButton.classList.remove("active");
+		sidebar.classList.remove("active");
+		fixture.classList.remove("active");
+		pageContent.classList.remove("active");
+
         // Does a scroll target exist?
         if (target.length) {
         // Only prevent default if animation is actually gonna happen

@@ -10,9 +10,11 @@
 		fixture.classList.toggle("active");
 		pageContent.classList.toggle("active");
 	});
-})();
 
-!(function () {
+
+
+
+	///
 	const accordions = Array.from(document.querySelectorAll(".nav__item"));
 	const accordionLabels = Array.from(
 		document.querySelectorAll(".nav__item__label")
