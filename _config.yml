@@ -93,6 +93,8 @@ assets:
     js: true
   baseurl: /assets
   cache: false
+  digest: false
+  cachebusting: false
   sources:
     - css
     - fonts
