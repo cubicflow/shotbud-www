@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Shotbud for Apple Watch
-email: hello@shotbud.com
+title: Shotbud shot timer for Apple Watch
+email: cweiland2808@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Shotbud is an app available for Apple Watch and iPhone, for shooters to track and visualize their shooting sessions while improving performance and reinforcing responsible gun ownership.
+  Shotbud is an app designed for competitive shooters. Using the sensors in Apple Watch, Shotbud can detect your shots and track your performance during live or dry fire.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 community_url: ""

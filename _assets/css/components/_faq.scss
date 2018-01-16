@@ -2,22 +2,26 @@
     float: left;
     width: 100%;
     background-color: $background-color-light;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 20px 0px;
     display: flex;
     align-items: center;
 
     @include breakpoint (medium) {
-        padding: 70px 0px 70px 0px;
+        padding: 70px 0px 0px 0px;
     }
 
     @include breakpoint (large) {
-        padding: 100px 0px 80px 0px;
+        padding: 100px 0px 0px 0px;
     }
 
     h3 {
         color: $black;
         text-align: center;
         margin-bottom: 4em;
+    }
+
+    &__contact {
+        text-align: center;
     }
 
     &__container {
